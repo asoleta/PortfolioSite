@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Alexandra Soleta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/skeleton.css">
+        <link rel="stylesheet" href="/css/stylesheet.css">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    
+    
+    <div class="container">
+
+        <h1>
+        Contact Us
+        </h1>
+        <p>
+        Fill up the form below to send us a message.
+        </p>
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+        <input type="hidden" name="access_key" value="62fe6171-defc-42d4-a269-fe748f8b55be" />
+        <input type="hidden" name="subject" value="New Submission from Portfolio Site" />
+        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+        <div>
+        <label for="name">Full Name</label>
+        <input class="u-full-width" type="text" name="name" id="name" placeholder="John Doe" required />
+        </div>
+        <div>
+        <label for="email">Email Address</label>
+        <input class="u-full-width" type="email" name="email" id="email" placeholder="you@company.com" required />
+        </div>
+        <div>
+        <label for="phone">Phone Number</label>
+        <input class="u-full-width" type="text" name="phone" id="phone" placeholder="(555) 1234-567" required />
+        </div>
+        <div>
+        <label for="message">Your Message</label>
+        <textarea class="u-full-width" rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+        </div>
+        <div>
+        <button class="button-primary" type="submit">
+        Send Message
+        </button>
+        </div>
+        <p id="result"></p>
+        </form>
+        </div>
+
+    <script>
+        const form = document.getElementById("form");
+        const result = document.getElementById("result");
+
+
+        form.addEventListener("submit", function (e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+        var object = {};
+        formData.forEach((value, key) => {
+            object[key] = value;
+        });
+        var json = JSON.stringify(object);
+        result.innerHTML = "Please wait...";
+
+
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+            },
+            body: json
+        })
+            .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+                result.classList.remove("text-gray-500");
+                result.classList.add("text-green-500");
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+                result.classList.remove("text-gray-500");
+                result.classList.add("text-red-500");
+            }
+            })
+            .catch((error) => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+            })
+            .then(function () {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 5000);
+            });
+        });
+    </script>
+</body>
+
+</html>
