@@ -48,6 +48,27 @@ p {
     font-size: 3rem;
 }
 
+.button1 {
+    background-color: var(--grey);
+    width: 20rem;
+    padding: 2rem;
+    color: white;
+    font-size: 2.5rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+.button2 {
+    background-color: var(--darkBlue);
+    width: 20rem;
+    padding: 2rem;
+    color: white;
+    font-size: 2.5rem;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
 /* Header */
 .header{
     background-color: var(--darkBlue);
@@ -287,6 +308,22 @@ p {
     margin-left: 4rem;
 }
 
+/* Learn More */
+.learn {
+    padding: 8rem;
+}
+
+.learnBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.learnBtn button {
+    margin: 5rem 6rem;
+}
+
 /* Mobile View */
 @media screen and (max-width:600px) {
     /* Universal Styles */
@@ -307,6 +344,27 @@ p {
 
     p {
         font-size: 1rem;
+    }
+
+    .button1 {
+        background-color: var(--grey);
+        width: 20rem;
+        padding: 2rem;
+        color: white;
+        font-size: 2.5rem;
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+    
+    .button2 {
+        background-color: var(--darkBlue);
+        width: 20rem;
+        padding: 2rem;
+        color: white;
+        font-size: 2.5rem;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
     }
 
     /* Navigation Bar */
