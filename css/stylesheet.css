@@ -44,6 +44,10 @@ h3 {
     color: white;
 }
 
+p {
+    font-size: 3rem;
+}
+
 /* Header */
 .header{
     background-color: var(--darkBlue);
@@ -75,9 +79,9 @@ h3 {
 
 .menu a{
     display: block;
-    padding: 1rem 5rem;
-    color: white;
+    color: var(--lightBlue);
     font-size: 2rem;
+    padding: 2rem 5rem;
 }
 
 .menu a:hover{
@@ -87,11 +91,6 @@ h3 {
 .nav{
     max-height: 0;
     transition: max-height .5s ease-out;
-}
-
-.nav h1 {
-    color: var(--lightBlue);
-    padding: 3rem 0rem;
 }
 
 /* Menu Icon */
@@ -159,7 +158,7 @@ h3 {
 
 /* Hero Banner */
 #hero {
-    background: url("images/heroBG.png") no-repeat;
+    background: url("/images/heroBG.png") no-repeat;
     background-size:cover;
     padding: 6rem;
     display: flex;
@@ -233,6 +232,24 @@ h3 {
 
 }
 
+/* Introduction Block */
+.introText {
+    text-align: center;
+    padding: 3rem;
+}
+
+.introText h2 {
+    display: inline;
+}
+
+.introHeader {
+    color:black;
+}
+
+#introduction p {
+    padding: 1rem 10rem;
+}
+
 /* Mobile View */
 @media screen and (max-width:600px) {
     /* Universal Styles */
@@ -250,6 +267,15 @@ h3 {
         font-size: 1rem;
         color: white;
     }
+
+    /* Navigation Bar */
+    .menu a{
+        display: block;
+        padding: 1rem 5rem;
+        color: white;
+        font-size: 2rem;
+    }
+    
 
 
     /* Hero Banner */
