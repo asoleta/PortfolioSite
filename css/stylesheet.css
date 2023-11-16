@@ -54,15 +54,16 @@ p {
     position: sticky;
     top: 0;
     width: 100%;
-    height: 8rem;
+    z-index: 1000;
 }
 
 /* Logo */
 .logo{
     display: inline-block;
     color: var(--white);
-    font-size: 6rem;
+    font-size: 4rem;
     margin-left: 3rem;
+    
 
 }
 
@@ -250,6 +251,42 @@ p {
     padding: 1rem 10rem;
 }
 
+/* Recent Projects */
+#recentProjectsTitle .titleBlock {
+    color: white;
+    padding: 2rem 3rem;
+    background-color: var(--purple);
+    width: 25rem;
+    text-align: center;
+    font-size: 2.5rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+#recentProjectsTitle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+}
+
+#recentProjects img {
+    width: 40rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#recentProjects h3 {
+    color: var(--purple);
+    margin-left: 4rem;
+    margin-bottom: 0rem;
+}
+
+#recentProjects p {
+    margin-left: 4rem;
+}
+
 /* Mobile View */
 @media screen and (max-width:600px) {
     /* Universal Styles */
@@ -273,6 +310,11 @@ p {
     }
 
     /* Navigation Bar */
+    .header {
+        padding: 0;
+        margin: 0;
+    }
+
     .menu a{
         display: block;
         padding: 1rem 5rem;
@@ -287,15 +329,13 @@ p {
     {
         height: 15rem;
         width: 100%;
+        padding: 1rem;
+        margin-top: -10rem;
     }
     .heroPhoto
     {
         width: 9rem;
         margin-left: .2rem;
-    }
-
-    #hero {
-        padding: 1rem;
     }
     
     .heroName h1,
@@ -332,5 +372,28 @@ p {
 
     #introduction p {
         padding: 0rem 5rem;
+    }
+
+    /* Recent Projects */
+    #recentProjects img {
+        width: 20rem;
+    }
+
+    #recentProjectsTitle .titleBlock {
+        color: white;
+        padding: 1rem 2rem;
+        background-color: var(--purple);
+        width: 15rem;
+        text-align: center;
+        font-size: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+    }
+    
+    #recentProjectsTitle {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
     }
 }
