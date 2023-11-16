@@ -259,13 +259,17 @@ p {
     }
     
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         color: white;
     }
     
     h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: white;
+    }
+
+    p {
+        font-size: 1rem;
     }
 
     /* Navigation Bar */
@@ -319,5 +323,14 @@ p {
         height: 2rem;
         width: 100%;
         overflow:hidden;
+    }
+
+    /* Introduction Block */
+    .introText {
+        padding: 1.5rem;
+    }
+
+    #introduction p {
+        padding: 0rem 5rem;
     }
 }
