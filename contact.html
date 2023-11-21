@@ -16,43 +16,98 @@
 
 <body>
     
-    
+    <!-- Navigation bar -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="images/computerLogo.svg">
+        </a>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--End of Navigation Bar-->
+
+    <!--Start of Contact Title-->
+    <div class="contactTitle">
+        <div class="contactBG">
+            <div class="contactText">
+                <h1 class="headerTag">&lt;h1&gt;</h1>
+                <h1>Contact</h1>
+                <h1 class="headerTag">&lt;/h1&gt;</h1>
+            </div>
+        </div>
+    </div>
+    <!--End of Contact Title-->
+
+    <!--Start of Contact Form-->
     <div class="container">
 
-        <h1>
-        Contact Us
-        </h1>
-        <p>
-        Fill up the form below to send us a message.
-        </p>
+        <div class="contactText">
+            <h2 class="headerTag">&lt;h2&gt;</h2>
+            <h2>Contact Form</h2>
+            <h2 class="headerTag">&lt;/h2&gt;</h2>
+        </div>
+
         <form action="https://api.web3forms.com/submit" method="POST" id="form">
         <input type="hidden" name="access_key" value="62fe6171-defc-42d4-a269-fe748f8b55be" />
         <input type="hidden" name="subject" value="New Submission from Portfolio Site" />
         <input type="checkbox" name="botcheck" id="" style="display: none;" />
+        
         <div>
         <label for="name">Full Name</label>
         <input class="u-full-width" type="text" name="name" id="name" placeholder="John Doe" required />
         </div>
+
         <div>
         <label for="email">Email Address</label>
         <input class="u-full-width" type="email" name="email" id="email" placeholder="you@company.com" required />
         </div>
+
         <div>
         <label for="phone">Phone Number</label>
         <input class="u-full-width" type="text" name="phone" id="phone" placeholder="(555) 1234-567" required />
         </div>
+
         <div>
         <label for="message">Your Message</label>
         <textarea class="u-full-width" rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
         </div>
+
         <div>
-        <button class="button-primary" type="submit">
+        <button class="button2" type="submit">
         Send Message
         </button>
         </div>
         <p id="result"></p>
         </form>
-        </div>
+    </div>
+
+    <!--End of Contact Form-->
+
+    <!--Footer-->
+    <footer>
+        <a href="https://github.com/asoleta">
+            <img src="images/githubFooter.svg">
+        </a>
+
+        <a href="https://www.linkedin.com/in/alexandra-soleta-354a65260/">
+            <img src="images/linkedinFooter.svg">
+        </a>
+    </footer>
+    <!--End of Footer-->
 
     <script>
         const form = document.getElementById("form");

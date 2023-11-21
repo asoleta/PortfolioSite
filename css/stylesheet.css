@@ -324,6 +324,59 @@ p {
     margin: 5rem 6rem;
 }
 
+/*Contact Form*/
+.contactTitle {
+    background: url(/images/heroBG.png);
+    padding: 10rem 4rem;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+.contactText h1{
+    display: inline;
+    font-weight: bold;
+}
+
+.contactText h2 {
+    display:inline;
+    color: black;
+}
+
+.container .contactText .headerTag{
+    color: var(--purple);
+}
+
+.contactText .headerTag {
+    color: var(--darkBlue);
+}
+
+.container .contactText {
+    text-align: center;
+    padding: 5rem;
+}
+
+.contactBG {
+    background-color: rgba(210, 210, 210, 0.68);
+    padding: 5rem 8rem;
+    width: 75rem;
+}
+
+.container .button2 {
+    font-size: 2rem;
+    padding: 1rem;
+    float:right;
+    margin: 4rem 0rem;
+}
+
+.container .button2:hover {
+    color: var(--lightBlue);
+}
+
+input:focus {
+    border-color: var(--lightBlue);
+}
+
 /* Footer */
 footer {
     background-color: var(--darkBlue);
@@ -390,8 +443,6 @@ footer img {
         color: white;
         font-size: 2rem;
     }
-    
-
 
     /* Hero Banner */
     #hero 
@@ -475,6 +526,25 @@ footer img {
         margin: 2rem 1rem;
         font-size: 1.5rem;
         width: 15rem;
+    }
+
+    /*Contact Form*/
+    .contactTitle {
+    padding: 3rem 2rem;
+    }
+
+    .contactText h1{
+    font-size: 2.2rem;
+    }
+
+    .contactText h2 {
+    font-size: 1.8rem;
+    }
+
+    .container .button2 {
+        font-size: 1.5rem;
+        padding: .5rem;
+        margin: 2rem 0rem;
     }
 
     /*Footer*/
