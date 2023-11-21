@@ -324,6 +324,17 @@ p {
     margin: 5rem 6rem;
 }
 
+/* Footer */
+footer {
+    background-color: var(--darkBlue);
+    padding: 1.5rem;
+}
+
+footer img {
+    width: 6rem;
+    margin: 0rem 1.5rem;
+}
+
 /* Mobile View */
 @media screen and (max-width:600px) {
     /* Universal Styles */
@@ -454,4 +465,27 @@ p {
         align-items: center;
         padding: 3rem;
     }
+
+    /*Learn More*/
+    .learn {
+        padding: 2rem;
+    }
+    
+    .learnBtn button {
+        margin: 2rem 1rem;
+        font-size: 1.5rem;
+        width: 15rem;
+    }
+
+    /*Footer*/
+    footer {
+        background-color: var(--darkBlue);
+        padding: 1rem;
+    }
+    
+    footer img {
+        width: 3rem;
+        margin: 0rem 1rem;
+    }
+
 }
