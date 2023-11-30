@@ -439,7 +439,7 @@ input:focus {
 }
 
 .skill {
-    width: 500px;
+    width: 80rem;
     margin: 2rem auto;
     background-color: var(--darkBlue);
     padding: 1rem;
@@ -545,6 +545,36 @@ input:focus {
 
     100% {
         width: 70%;
+    }
+}
+
+.javascript {
+    width: 30%;
+    animation: javascript 3s;
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+.r {
+    width: 40%;
+    animation: r 3s;
+}
+
+@keyframes r {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
     }
 }
 
