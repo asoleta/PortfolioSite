@@ -23,10 +23,6 @@ a{
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
-}
-
 /* Universal Styles */
 
 h1 {
@@ -46,6 +42,10 @@ h3 {
 
 p {
     font-size: 3rem;
+}
+
+li {
+    font-size:2rem;
 }
 
 .button1 {
@@ -415,6 +415,10 @@ input:focus {
     padding: 2rem 4rem;
     justify-content: center;
     align-items: center;
+}
+
+.aboutBody {
+    padding: 2rem 15rem;
 }
 
 /* Footer */
