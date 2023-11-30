@@ -378,6 +378,15 @@ input:focus {
     border-color: var(--lightBlue);
 }
 
+/* About Me */
+.titleText h1{
+    display: inline;
+}
+
+.titleText .centerText {
+    color:black;
+}
+
 /* Footer */
 footer {
     background-color: var(--darkBlue);
