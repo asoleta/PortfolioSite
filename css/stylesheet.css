@@ -379,6 +379,11 @@ input:focus {
 }
 
 /* About Me */
+.titleText {
+    text-align: center;
+    padding: 5rem 0rem;
+}
+
 .titleText h1{
     display: inline;
 }
