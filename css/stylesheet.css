@@ -197,11 +197,6 @@ li {
     display: inline;
 }
 
-.headerTag {
-    color: var(--lightBlue);
-    font-size: 2.75rem;
-}
-
 .breakTag {
     color: var(--pink);
     font-size: 2.5rem;
@@ -346,14 +341,6 @@ li {
 .contactText h2 {
     display:inline;
     color: black;
-}
-
-.container .contactText .headerTag{
-    color: var(--purple);
-}
-
-.contactText .headerTag {
-    color: var(--darkBlue);
 }
 
 .container .contactText {
@@ -664,11 +651,6 @@ footer img {
     .heroAbout h3,
     .heroSchool h3 {
         display: inline;
-    }
-    
-    .headerTag {
-        color: var(--lightBlue);
-        font-size: 1rem;
     }
     
     .breakTag {
