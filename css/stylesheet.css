@@ -584,6 +584,23 @@ input:focus {
     padding: 3rem 0rem;
 }
 
+.githubBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30%;
+}
+
+.githubBtn img {
+    width: 13rem;
+}
+
+.githubBtn p {
+    font-size: 2rem;
+    color: var(--purple);
+}
+
 /* Experience */
 .experience {
     background-color: var(--lightBlue);
