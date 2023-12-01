@@ -587,7 +587,7 @@ input:focus {
 /* Experience */
 .experience {
     background-color: var(--lightBlue);
-    padding: 5rem;
+    padding: 5rem 14rem;
 }
 
 .experience h1 {
@@ -622,6 +622,10 @@ input:focus {
     display: flex;
     justify-content: center;
     margin-top: 8rem;
+}
+
+.resume .button1 a{
+    color: white;
 }
 
 /* Footer */
