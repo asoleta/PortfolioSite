@@ -566,6 +566,24 @@ input:focus {
     }
 }
 
+/* Projects */
+.projects img {
+    width: 30rem;
+}
+
+.projects h4 {
+    color: var(--purple);
+    text-align: center;
+}
+
+.projects {
+    padding: 2rem 2rem 10rem 2rem;
+}
+
+.projects .row .column{
+    padding: 3rem 0rem;
+}
+
 /* Footer */
 footer {
     background-color: var(--darkBlue);
