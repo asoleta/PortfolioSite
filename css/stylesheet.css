@@ -115,7 +115,7 @@ li {
 }
 
 .menu a:hover{
-    background-color: white;
+    background-color: var(--lightBlue);
 }
 
 .nav{
