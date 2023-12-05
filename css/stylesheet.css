@@ -678,6 +678,10 @@ footer img {
         font-size: 1rem;
     }
 
+    li {
+        font-size:1rem;
+    }
+
     .button1 {
         background-color: var(--grey);
         width: 20rem;
@@ -809,6 +813,188 @@ footer img {
         font-size: 1.5rem;
         padding: .5rem;
         margin: 2rem 0rem;
+    }
+
+    /* About Me */
+    .titleText {
+        padding: 2rem 0rem;
+    }
+
+    .aboutImg img{
+        width: 30rem;
+    }
+
+    .aboutText .info p {
+        display:inline;
+        font-size: 2rem;
+    }
+
+    .info {
+        padding: 1rem;
+    }
+
+    .aboutBlock {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .aboutBody ul{
+        list-style-type: disc;
+    }
+
+    .aboutBody {
+        padding: 2rem 4rem;
+    }
+
+    /* Skill Bar*/
+    .titleText h2 {
+        display:inline;
+    }
+
+    .skill h3 {
+        font-size: 2.5rem;
+    }
+
+    .skill {
+        width: 80rem;
+        margin: 2rem auto;
+        margin-bottom: 10rem;
+        background-color: var(--darkBlue);
+        padding: 1rem;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .skill li {
+        margin: 20px 0;
+        padding: 10px;
+        list-style-type: none;
+    }
+
+    .bar {
+        background: white;
+        display: block;
+        height: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1)
+    }
+
+    .bar:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    .bar span {
+        height: 20px;
+        float: left;
+        background: var(--pink);
+    }
+
+    .java {
+        width: 50%;
+        animation: java 3s;
+    }
+
+    @keyframes java {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 50%;
+        }
+    }
+
+    .python {
+        width: 40%;
+        animation: python 3s;
+    }
+
+    @keyframes python {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 40%;
+        }
+    }
+
+    .c {
+        width: 60%;
+        animation: c 3s;
+    }
+
+    @keyframes c {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 60%;
+        }
+    }
+
+    .html {
+        width: 75%;
+        animation: html 3s;
+    }
+
+    @keyframes html {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 75%;
+        }
+    }
+
+    .css {
+        width: 70%;
+        animation: css 3s;
+    }
+
+    @keyframes css {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 70%;
+        }
+    }
+
+    .javascript {
+        width: 30%;
+        animation: javascript 3s;
+    }
+
+    @keyframes javascript {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 30%;
+        }
+    }
+
+    .r {
+        width: 40%;
+        animation: r 3s;
+    }
+
+    @keyframes r {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 40%;
+        }
     }
 
     /*Footer*/
