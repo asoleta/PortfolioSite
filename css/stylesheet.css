@@ -1022,6 +1022,10 @@ footer img {
         font-size: 1.5rem;
     }
 
+    .projects img {
+        margin-left: 4rem;
+    }
+
     /* Experience */
     .experience {
         background-color: var(--lightBlue);
