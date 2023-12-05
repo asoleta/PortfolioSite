@@ -997,6 +997,23 @@ footer img {
         }
     }
 
+    /* Projects */
+    .projects {
+        padding: 0rem 2rem 5rem 2rem;
+    }
+
+    .projects .row .column{
+        padding: 1rem 0rem;
+    }
+
+    .githubBtn img {
+        width: 10rem;
+    }
+
+    .githubBtn p {
+        font-size: 1.5rem;
+    }
+
     /*Footer*/
     footer {
         background-color: var(--darkBlue);
