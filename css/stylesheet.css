@@ -660,12 +660,12 @@ footer img {
 @media screen and (max-width:600px) {
     /* Universal Styles */
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         color: white;
     }
     
     h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
         color: white;
     }
     
@@ -675,11 +675,11 @@ footer img {
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     li {
-        font-size:1rem;
+        font-size:1.2rem;
     }
 
     .button1 {
@@ -853,11 +853,11 @@ footer img {
     }
 
     .skill h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .skill {
-        width: 80rem;
+        width: 33rem;
         margin: 2rem auto;
         margin-bottom: 10rem;
         background-color: var(--darkBlue);
