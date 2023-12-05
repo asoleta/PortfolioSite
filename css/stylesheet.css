@@ -44,6 +44,10 @@ h3 {
     color: white;
 }
 
+h4 {
+    font-size: 3rem;
+}
+
 p {
     font-size: 3rem;
 }
@@ -674,6 +678,10 @@ footer img {
         color: white;
     }
 
+    h4 {
+        font-size: 1.4rem;
+    }
+
     p {
         font-size: 1.2rem;
     }
@@ -1012,6 +1020,42 @@ footer img {
 
     .githubBtn p {
         font-size: 1.5rem;
+    }
+
+    /* Experience */
+    .experience {
+        background-color: var(--lightBlue);
+        padding: 3rem 4rem;
+    }
+
+    .innerContainer {
+        background-color: white;
+        padding: 2rem 3rem;
+    }
+
+    .innerContainer li {
+        list-style-type: disc;
+        margin-left: 2rem;
+    }
+
+    .work {
+        line-height: 80%;
+        padding: 1rem 0rem;
+    }
+
+    .resume {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .resume .button1 a{
+        color: white;
+        font-size: 1.5rem; 
+    }
+
+    .resume .button1 {
+        padding: .3rem;
     }
 
     /*Footer*/
